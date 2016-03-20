@@ -1,0 +1,27 @@
+<h1>hello world</h1>
+<div class="grid">
+    <h1>{{ info }}</h1>
+    <!-- title row-->
+    <div class="row">
+        <div class="textright col-1-4">
+        <!-- Location -->
+        <h3 class="company">{{ info.location }}</h3>
+        </div><!--
+        div 
+        --><div class="col-3-4">
+        <!-- Position -->
+        <h3 class="position">{{ info.title }}</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="textright col-1-4">
+        <!-- Dates of Employment -->
+        <h4 class="date">{{ info.date }}</h4>
+        </div><!--
+        div 
+        --><div class="col-3-4">
+        <!-- Description of Position -->
+        <p class="edit">{{ info.description }}</p>
+        </div>
+    </div>
+</div>

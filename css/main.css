@@ -1,0 +1,202 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+=============================
+grid styles
+=============================
+*/
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font: 300 16px/22px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#page {
+    width: 936px;
+    /*height: 1368px;*/
+    margin: 60px 72px;
+}
+
+
+.grid {
+  /*margin: 0;*/
+  width: 936px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.grid,
+.col-1-4,
+.col-1-2,
+.col-3-4{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-4,
+.col-1-2,
+.col-3-4{
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-4 {
+  width: 30%;
+}
+.col-1-2 {
+  width: 40%;
+}
+.col-3-4 {
+    width: 70%;
+}
+.textleft {
+    text-align: left;
+}
+.textright {
+    text-align: right;
+}
+.quote {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    font-size: 20px;
+    font-weight: 100;
+    padding: 20px;
+
+}
+#fullname {
+    vertical-align: bottom;
+    font-size: 250%;
+    font-weight: 200;
+    line-height: 200%;
+    padding-bottom: 20px;
+}
+.date {
+    font-size:12px;
+}
+.company,
+.position{
+    /*border: thin solid black;/**/
+    vertical-align: middle;
+    height: 28px;
+}
+.company {
+    font-size: 14px;
+    background: #CADBDE;
+    padding: 2px;
+    padding-right: 4%;/**/
+    font-weight: 200;
+}
+.position {
+    padding: 0;
+    font-size: 22px;
+}
+header {
+    padding-bottom: 10px;
+    vertical-align: bottom;
+}
+.row {
+}
+.box{
+    padding: 0 30px;
+    font-size: 16px;
+    line-height: normal;
+}
+
+a {
+    color: #047FAC;
+}
+h1,h2 {
+    color: #D4681C;
+}
+h2 {
+   font-size: 24px;
+    padding: 8px 0px;
+}
+h4 {
+    color: darkgray;
+}
+
+/* Resume Formatting options */
+.optional {
+    display: none;
+}
+.small {
+    font-size: 13px;
+}
+.underline {
+    border: thin solid black;
+}
+.edit {
+    /*things that require more editing*/
+    color: red;
+    font-weight: 600;
+}
+.buffer {
+    height: 200%
+}
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
