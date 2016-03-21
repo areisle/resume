@@ -18,7 +18,7 @@
                     <h2 class="optional"></h2>
                 </section><!--
                 Address
-                --><section class="box textright col-1-4">
+                --><section class="box col-1-4" style="text-align:right;">
                     <!-- line 1 -->
                     <p>Address line 1</p>
                     <!-- line 2 -->
@@ -45,14 +45,14 @@
                         </section><!--
                         Section 
                         --><section class="col-3-4">
-                        <h2>{{ section.title }}</h2>
+                        <h2 class="section-title">{{ section.title }}</h2>
                         <h3>{{ section.item.location }}</h3>
                         </section>
 
                 </section>
                 <!-- Job 1-->
-                <app-info info="item">
-                </app-info>
+                <item-details info="item">
+                </item-details>
             </div>
                 
         <!-- Modules -->

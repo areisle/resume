@@ -62,10 +62,9 @@ body {
     margin: 60px 72px;
 }
 
-
 .grid {
   /*margin: 0;*/
-  width: 936px;
+    width: 936px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
@@ -92,12 +91,7 @@ body {
 .col-3-4 {
     width: 70%;
 }
-.textleft {
-    text-align: left;
-}
-.textright {
-    text-align: right;
-}
+
 .quote {
     text-align: center;
     font-style: italic;
@@ -105,7 +99,11 @@ body {
     font-size: 20px;
     font-weight: 100;
     padding: 20px;
-
+}
+.section-title {
+    color: #D4681C;
+    font-size: 24px;
+    padding: 8px 0px;
 }
 #fullname {
     vertical-align: bottom;
@@ -113,22 +111,25 @@ body {
     font-weight: 200;
     line-height: 200%;
     padding-bottom: 20px;
+    color: #D4681C;
 }
 .date {
     font-size:12px;
+    text-align: right;
 }
-.company,
+.location,
 .position{
     /*border: thin solid black;/**/
     vertical-align: middle;
     height: 28px;
 }
-.company {
+.location {
     font-size: 14px;
     background: #CADBDE;
     padding: 2px;
     padding-right: 4%;/**/
     font-weight: 200;
+    text-align: right;
 }
 .position {
     padding: 0;
@@ -149,14 +150,8 @@ header {
 a {
     color: #047FAC;
 }
-h1,h2 {
-    color: #D4681C;
-}
-h2 {
-   font-size: 24px;
-    padding: 8px 0px;
-}
-h4 {
+
+.date {
     color: darkgray;
 }
 
@@ -181,22 +176,4 @@ h4 {
 ul {
     list-style-type: disc;
     padding-left: 20px;
-}
-
-/*
-  ========================================
-  Clearfix
-  ========================================
-*/
-.group:before,
-.group:after {
-  content: "";
-  display: table;
-}
-.group:after {
-  clear: both;
-}
-.group {
-  clear: both;
-  *zoom: 1;
 }
