@@ -1,21 +1,20 @@
 app.controller('MainController', ['$scope', function ($scope) {
     $scope.sections = [
         {
-            title: "Example Section Title",
+            title: "Related Skills",
             item:
                 {
-                    location: "some company",
-                    title: "some job title",
+                    location: "Technical",
                     date: "date of employment",
-                    description: "description of duties"
+                    description: ["description of duties"] 
                 }
         },
         {
-            title: "Example Section Title 2",
+            title: "Work Experience",
             item:
                 {
-                    location: "some company 2",
-                    title: "some job title 2",
+                    location: "company",
+                    title: "job title",
                     date: "date of employment 2",
                     description: "description of duties 2"
                 }
