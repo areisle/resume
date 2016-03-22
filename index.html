@@ -50,8 +50,10 @@
 
                 </section>
                 <!-- Job 1-->
-                <item-details info="section.item">
-                </item-details>
+                <div ng-repeat="item in section.items">
+                    <item-details info="item">
+                    </item-details> 
+                </div>
             </div>
                 
         <!-- Modules -->
