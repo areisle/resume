@@ -4,11 +4,11 @@
         <meta charset="utf-8">
         <title>Resume</title>
         <link rel="stylesheet" type="text/css" href="css/main.css">
-        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>        
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>        
     </head>
     <body ng-app="resumeSections">
         <!-- Page -->
-        <div id="page" ng-controller="MainController">
+        <div id="page" ng-controller="MainController as ctrl">
             <!-- Header -->
             <header class="grid">
                 <section class="col-1-2" id="fullname">
@@ -38,7 +38,7 @@
             </header>
             <!-- Resume Sections -->
             <!-- Section 1 -->
-            <div ng-repeat="section in sections">
+            <div ng-repeat="section in ctrl.sections">
                 <!-- section title -->
                 <section class="grid">
                     <section class="textright col-1-4">

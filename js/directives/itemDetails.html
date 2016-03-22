@@ -3,16 +3,16 @@
     <div class="row">
         <div class="col-1-4">
             <!-- Location / Type -->
-            <h3 class="location" ng-show="info.hasOwnProperty('location')">{{ info.location }}</h3>
+            <h3 class="location" ng-show="ctrl.info.hasOwnProperty('location')">{{ ctrl.info.location }}</h3>
         </div><!--
         div 
-    --><div class="col-3-4" ng-switch="info.hasOwnProperty('title')">
+    --><div class="col-3-4" ng-switch="ctrl.info.hasOwnProperty('title')">
             <!-- Position / Title -->
-            <h3 class="position" ng-switch-when=true>{{ info.title }}</h3>
+            <h3 class="position" ng-switch-when=true>{{ ctrl.info.title }}</h3>
             <div ng-switch-default>
-                <p ng-if="angular.isString(info.description)">{{ info.description }}<p>
-                <ul ng-if="!angular.isString(info.description)">
-                    <li ng-repeat="part in info.description">{{part}}</li>
+                <p ng-if="ctrl.descriptionIsString()">{{ ctrl.info.description }}<p>
+                <ul ng-if="!ctrl.descriptionIsString()">
+                    <li ng-repeat="part in ctrl.info.description">{{part}}</li>
                 </ul>
             </div>
         </div>
@@ -21,15 +21,15 @@
     <div class="row">
         <div class="col-1-4">
         <!-- Dates of Employment -->
-        <h4 class="date" ng-show="info.hasOwnProperty('date')">{{ info.date }}</h4>
+        <h4 class="date" ng-show="ctrl.info.hasOwnProperty('date')">{{ ctrl.info.date }}</h4>
         </div><!--
         div 
         --><div class="col-3-4">
         <!-- Description of Position -->
-        <div ng-if="info.hasOwnProperty('title')">
-            <p ng-if="angular.isString(info.description)">{{ info.description }}<p>
-            <ul ng-if="!angular.isString(info.description)">
-                <li ng-repeat="part in info.description">{{part}}</li>
+        <div ng-if="ctrl.info.hasOwnProperty('title')">
+            <p ng-if="ctrl.descriptionIsString()">{{ ctrl.info.description }}<p>
+            <ul ng-if="!ctrl.descriptionIsString()">
+                <li ng-repeat="part in ctrl.info.description">{{part}}</li>
             </ul>
         </div>
         </div>

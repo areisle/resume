@@ -1,5 +1,5 @@
-app.controller('MainController', ['$scope', function ($scope) {
-    $scope.sections = [
+app.controller('MainController', function () {
+    this.sections = [
         {
             title: "Related Skills",
             items:[
@@ -19,4 +19,5 @@ app.controller('MainController', ['$scope', function ($scope) {
                 }]
         }
     ]
-}]);
+    
+});
