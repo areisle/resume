@@ -5,8 +5,7 @@ app.controller('MainController', ['$scope', function ($scope) {
             item:
                 {
                     location: "Technical",
-                    date: "date of employment",
-                    description: ["description of duties"] 
+                    description: ["description of duties point 1","description of duties point 2"] 
                 }
         },
         {

@@ -2,16 +2,16 @@
     <!-- title row -->
     <div class="row">
         <div class="col-1-4">
-            <!-- Location -->
-            <h3 class="location">{{ info.location }}</h3>
+            <!-- Location / Type -->
+            <h3 class="location" ng-show="info.hasOwnProperty('location')">{{ info.location }}</h3>
         </div><!--
         div 
     --><div class="col-3-4" ng-switch="info.hasOwnProperty('title')">
-            <!-- Position -->
+            <!-- Position / Title -->
             <h3 class="position" ng-switch-when=true>{{ info.title }}</h3>
             <div ng-switch-default>
-                <p ng-if="typeof info.description === 'string'">{{ info.description }}<p>
-                <ul ng-if="typeof info.description !== 'string'">
+                <p ng-if="angular.isString(info.description)">{{ info.description }}<p>
+                <ul ng-if="!angular.isString(info.description)">
                     <li ng-repeat="part in info.description">{{part}}</li>
                 </ul>
             </div>
@@ -21,14 +21,14 @@
     <div class="row">
         <div class="col-1-4">
         <!-- Dates of Employment -->
-        <h4 class="date">{{ info.date }}</h4>
+        <h4 class="date" ng-show="info.hasOwnProperty('date')">{{ info.date }}</h4>
         </div><!--
         div 
         --><div class="col-3-4">
         <!-- Description of Position -->
         <div ng-if="info.hasOwnProperty('title')">
-            <p ng-if="typeof info.description === 'string'">{{ info.description }}<p>
-            <ul ng-if="typeof info.description !== 'string'">
+            <p ng-if="angular.isString(info.description)">{{ info.description }}<p>
+            <ul ng-if="!angular.isString(info.description)">
                 <li ng-repeat="part in info.description">{{part}}</li>
             </ul>
         </div>
