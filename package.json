@@ -1,0 +1,23 @@
+{
+  "name": "resume",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/areisle/resume.git"
+  },
+  "author": "Abbey Reisle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/areisle/resume/issues"
+  },
+  "homepage": "https://github.com/areisle/resume#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
